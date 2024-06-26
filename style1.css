@@ -1,0 +1,15 @@
+.box1{
+
+    border: 4cm;
+    border-radius: 5ch;
+    border-width: 20ch;
+    
+
+    
+}
+table{
+    border: 1px solid rgba(4, 48, 10, 0.295);
+    border-width: 5ch;
+    background-color: rgb(240, 235, 235);
+    box-sizing: calc(4cm);
+}

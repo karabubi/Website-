@@ -1,0 +1,102 @@
+body{
+    margin: 0px;
+    background-color: #bcbeb657;
+}
+main{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+h1{
+    position: static;
+ width: 500px;
+  margin: auto;
+  border: 5px solid rgb(109, 107, 107);
+  border-radius: 6ch;
+    
+    
+
+    text-align: center;
+    text-shadow: 0 0 3px #66ff00, 0 0 5px #043824;
+    
+}
+
+.navbar ul{
+    list-style-type: none;
+    background-color: #7a7e7ed7;
+    padding: 10px;
+    margin: 10px;
+    overflow: hidden;
+    text-align: center;
+    text-shadow: 2px 2px 5px red;
+    
+}
+
+.column{
+    float: right; 
+    border-image: 8cm;
+    border-color: #b3ff00;
+    animation-name: slideleft;
+    animation-duration: 10s;
+animation-name: slideUp;
+}
+
+
+@keyframes slideleft{
+    from{transform: translateX(100%)}
+}
+@keyframes slideUp{
+    from{transform: translateY(300%)}
+}
+.navbar a{
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    display: block;
+    text-align: center;
+}
+.navbar a:hover{
+    background-color: #10111125;
+
+}
+.navbar li{
+    float: left;
+    
+}
+
+.gallery{
+    image-resolution: 100%;
+    animation-name: shrink;
+   
+    animation-duration: 10s;
+}
+@keyframes rotate{
+    25%{transform: rotateY(380deg)}
+}
+
+@keyframes shrink{
+    25%{transform: scale(0.5, 0.5)}
+}
+
+
+.descriotion{
+    text-align: center;
+    text-decoration: solid;
+    text-decoration: dotted;
+    text-decoration: underline;
+  text-decoration-color: red;
+  color: red;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
+.icons{
+    text-align: center;
+}
+.fa-solid.fa-house.fa-5x{
+    color: rgb(194, 194, 194);
+}
+.fa-brands.fa-twitter.fa-5x{
+    color: rgb(94, 15, 240);
+}
+.fa-brands.fa-youtube.fa-5x{
+    color: rgb(219, 52, 52);
+}
