@@ -3,38 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Saleh Alkarabubi</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Simple Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
+    <div class="container">
+        <div class="box1">
+            <img src="saleh.jpg" alt="Box1 Image" class="box1-image">
 
-    <h1 style="color:black;">Saleh Omer Alkarabubi </h1>
-<nav class="navbar">
-<ul>
-<li><a href="index.html">Home</a></li>
-<li><a href="about.html">About</a></li>
-<li><a href="contact.html">Contact</a></li>
-<li><a href="photos.html">Photos</a></li>
-<div class="column">
+            <!--<div class="container" onmouseover="changeBackground()" onmouseout="restoreBackground()">-->
+            <h1>Saleh Omer Ali Alkarabubi</h1>
 
-  <img src="saleh.jpg" width="60" height="70">
-</div>
-</ul>
+        <!--</div>-->
+<!--
+        <script>
+        function changeBackground() {
+          document.body.style.backgroundImage = "url('Tripolies.jpg')";
+          document.body.style.backgroundSize = "cover";
+        }
+        
+        function restoreBackground() {
+          document.body.style.backgroundImage = "none";
+        }
+        </script>
+        -->
 
-</nav>
-<br>
-<br>
-<div class="gallery">
-    <a target="_blank" href="Tripoli.jpg">
-        <center><img src="Tripoli.jpg" alt="This picture is of capital of Libya" width="300" height="200" margin: 100px></center>
-     </a>
-</div> 
-<div class="descriotion"><br>This is the Captail of Libya (Tripoli)
-
-</div>
-
-
-  
+        </div>
+        <div class="box2">
+            <nav>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                    <li><a href="#"><i class="fas fa-info-circle"></i> About</a></li>
+                    <li><a href="photos.html"><i class="fas fa-camera"></i> Photos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
-
