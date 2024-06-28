@@ -3,8 +3,8 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: rgb(235, 226, 226);
+    color: #dfd3d3;
 }
 
 header {
@@ -12,13 +12,49 @@ header {
     color: white;
     padding: 20px 0;
     text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: larger;
 }
+
+.header-links ul li{
+
+    border-radius: 4ch;
+   
+    border-width: 4ch;
+    border-style: solid;
+}
+
+
+.header-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+       
+}
+
+.header-links li {
+    display: inline;
+
+}
+
+.header-links a {
+    text-decoration: none;
+    color:rgb(51, 49, 49); /* Customize the color */
+    margin-left: 20px; /* Space between links */
+    
+}
+
 
 #social-media {
     padding: 20px;
     text-align: center;
+    
 }
 
+#social-media i {
+    margin-right: 8px; /* Space between icon and text */
+    
+}
 #social-media ul {
     list-style: none;
     padding: 0;
@@ -27,18 +63,30 @@ header {
 #social-media ul li {
     display: inline;
     margin: 0 10px;
+    border-radius: 2cqb;
+    border-color:rgb(59, 57, 57);
+    border-width: 2cqb;
+    border-style: solid;
+    padding: 2cqb;
 }
 
 #social-media ul li a {
     text-decoration: none;
-    color: #333;
+    color: #2e2c2c;
     font-size: 18px;
     transition: color 0.3s ease;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 #social-media ul li a:hover {
-    color: #0073e6;
+    color: #150452;
 }
+
+
+
+
+
+
 
 footer {
     background-color: #333;
@@ -48,4 +96,6 @@ footer {
     position: fixed;
     width: 100%;
     bottom: 0;
+
+    font-family: 'Courier New', Courier, monospace;
 }
