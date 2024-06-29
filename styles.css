@@ -31,7 +31,7 @@ body {
     justify-content: center;
     position: relative;
     width: 100%;
-    height: 200px;
+    height: 300px;
     background-repeat:round;
 
 
@@ -47,7 +47,7 @@ body {
 .box1-image {
     position: absolute;
     right: 20px;
-    width: 100px;
+    width: 50px;
     height: auto;
     animation-name: slideUp;
     animation-duration: 2s;
