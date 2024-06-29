@@ -33,7 +33,8 @@ body {
     width: 100%;
     height: 300px;
     background-repeat:round;
-
+    margin-left: auto;
+    margin-right: auto;
 
     overflow: hidden; /* Ensures the marquee effect stays within the box */
 }
@@ -129,7 +130,7 @@ nav i {
     .box1 {
         height: auto;
         flex: 1;
-        margin-left: 200px;
+        margin-left: auto;
     }
 }
 
@@ -161,7 +162,7 @@ header {
 .header-links a {
     text-decoration: none;
     color: rgb(51, 49, 49); /* Customize the color */
-    margin-left: 20px; /* Space between links */
+    margin-left: auto; /* Space between links */
 }
 
 #social-media {
@@ -170,7 +171,7 @@ header {
 }
 
 #social-media i {
-    margin-right: 8px; /* Space between icon and text */
+    margin-right: auto; /* Space between icon and text */
 }
 
 #social-media ul {
