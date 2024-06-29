@@ -1,15 +1,17 @@
-// JavaScript can be used for further interactivity if needed
-document.addEventListener('DOMContentLoaded', function() {
-    // Example: Adding hover effects for navigation items
-    const menuItems = document.querySelectorAll('nav ul li');
+// JavaScript to dynamically update the footer text with the current year
+document.addEventListener('DOMContentLoaded', (event) => {
+    const footerText = document.createElement('footer p');
+    footerText.textContent = '© ' + new Date().getFullYear() + ' Saleh Omer Ali Alkarabubi';
+    document.body.appendChild(footerText);
+});
 
-    menuItems.forEach(item => {
-        item.addEventListener('mouseover', function() {
-            this.classList.add('active');
-        });
-
-        item.addEventListener('mouseout', function() {
-            this.classList.remove('active');
-        });
+// Change link colors when clicked
+document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', function() {
+        this.style.color = '#ff4500'; // Change to your preferred color
     });
 });
+
+//  Change footer text dynamically
+const footerText = document.querySelector('footer p');
+footerText.textContent = '© ' + new Date().getFullYear() + ' Saleh Omer Ali Alkarabubi';
