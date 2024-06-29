@@ -18,7 +18,7 @@ body {
 .container {
     display: flex;
     flex-direction: column;
-    height: 100%;
+    height: 1;
 }
 
 .box1 {
@@ -64,13 +64,12 @@ body {
 
 .box2 {
     background-color: #726c6c;
-    width: 200px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 20px;
-    height: 100%;
-    position: fixed;
+   
 }
 
 nav ul {
@@ -100,16 +99,115 @@ nav ul li a:hover {
    
 ul li{
 
-    border-radius: 2ch;
+    border-radius: 0.5rem;
     border-color: rgb(34, 32, 32);
     border-style: solid;
-    border-width: 1ch;
+    border-width: 1px;
     background-color: white;
     
     
-padding: auto;
+padding: 10px;
 }
 
 nav i {
     margin-right: 8px; /* Space between icon and text */
 }
+
+
+/* Responsive design for different screen sizes */
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+    }
+
+    .box2 {
+        width: 200px;
+        height: 100%;
+        position: fixed;
+    }
+
+    .box1 {
+        height: auto;
+        flex: 1;
+        margin-left: 200px;
+    }
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: larger;
+}
+
+.header-links ul li {
+    border-radius: 4ch;
+    border-width: 4ch;
+    border-style: solid;
+}
+
+.header-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header-links li {
+    display: inline;
+}
+
+.header-links a {
+    text-decoration: none;
+    color: rgb(51, 49, 49); /* Customize the color */
+    margin-left: 20px; /* Space between links */
+}
+
+#social-media {
+    padding: 20px;
+    text-align: center;
+}
+
+#social-media i {
+    margin-right: 8px; /* Space between icon and text */
+}
+
+#social-media ul {
+    list-style: none;
+    padding: 0;
+}
+
+#social-media ul li {
+    display: inline;
+    margin: 0 10px;
+    border-radius: 2ch;
+    border-color: rgb(59, 57, 57);
+    border-width: 2px;
+    border-style: solid;
+    padding: 10px;
+}
+
+#social-media ul li a {
+    text-decoration: none;
+    color: #2e2c2c;
+    font-size: 18px;
+    transition: color 0.3s ease;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#social-media ul li a:hover {
+    color: #150452;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
