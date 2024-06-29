@@ -1,0 +1,94 @@
+/* Resetting default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styling for body and header */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #ece0e0;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #363434;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    border-radius: 8px 8px 0 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+/* Styling for social media links */
+#social-media {
+    background-color: #fff;
+    margin: 20px auto;
+}
+
+.social-links {
+    list-style-type: none;
+    padding: 0;
+}
+
+.social-links li {
+    margin-bottom: 10px;
+}
+
+.social-links a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.social-links a:hover {
+    background-color: #f0f0f0;
+}
+
+.social-links a i {
+    margin-right: 10px;
+}
+
+/* Styling for footer */
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background-color: #333;
+    color: #fff;
+    border-radius: 0 0 8px 8px;
+}
+
+/* Responsive design adjustments */
+@media only screen and (max-width: 600px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    .social-links {
+        padding: 0.5em;
+    }
+
+    .social-links a {
+        padding: 8px;
+    }
+}

@@ -1,58 +1,44 @@
-/* Resetting default margins and paddings */
+/* Resetting default margin and padding for all elements */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Basic styling for the body and container */
 body {
     font-family: Arial, sans-serif;
-    color: #333;
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    background-color: rgb(247, 230, 209);
+    line-height: 1.6;
+    background-color: #f5e8e8;
+    margin: 0;
+    padding: 0;
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    height: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .box1 {
-    background-image: url('LIBYA\ DM.jpg');
-    background-size: cover;
-    background-position: center;
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    width: 100%;
-    height: 300px;
-    background-repeat:round;
-    margin-left: auto;
-    margin-right: auto;
-
-    overflow: hidden; /* Ensures the marquee effect stays within the box */
-}
-
-.box1 h1 {
-    flex: 1;
     text-align: center;
-    color: white;
+    padding: 20px;
+    background-image: url('LIBYA\ DM.jpg');
+    background-repeat: no-repeat;
 }
-
 .box1-image {
-    position: absolute;
-    right: 20px;
-    width: 50px;
-    height: auto;
+    width: 100%;
+    max-width: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+
     animation-name: slideUp;
     animation-duration: 2s;
 }
+
+
 
 @keyframes slideUp {
     0% {
@@ -63,152 +49,56 @@ body {
     }
 }
 
+
 .box2 {
-    background-color: #726c6c;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-   
+    margin-top: 20px;
 }
 
 nav ul {
     list-style-type: none;
-    width: 100%;
-    
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 nav ul li {
-    margin: 10px 0;
+    margin: 10px;
 }
 
 nav ul li a {
+    display: block;
+    padding: 10px 20px;
     text-decoration: none;
-    color: rgb(233, 11, 40);
-    font-weight: bold;
-    transition: color 0.3s ease;
-    text-align: center;
-    
+    color: #333;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: #007bff; /* Change to your preferred hover color */
+    background-color: #f0f0f0;
 }
 
-
-   
-ul li{
-
-    border-radius: 0.5rem;
-    border-color: rgb(34, 32, 32);
-    border-style: solid;
-    border-width: 1px;
-    background-color: white;
-    
-    
-padding: 10px;
-}
-
-nav i {
-    margin-right: 8px; /* Space between icon and text */
-}
-
-
-/* Responsive design for different screen sizes */
-@media (min-width: 768px) {
-    .container {
-        flex-direction: row;
+/* Responsive design adjustments */
+@media only screen and (max-width: 600px) {
+    .box1 h1 {
+        font-size: 1.5em;
     }
 
-    .box2 {
-        width: 200px;
-        height: 100%;
-        position: fixed;
+    nav ul {
+        flex-direction: column;
     }
 
-    .box1 {
-        height: auto;
-        flex: 1;
-        margin-left: auto;
+    nav ul li {
+        width: 100%;
+        text-align: center;
     }
 }
 
-header {
-    background-color: #333;
-    color: white;
-    padding: 20px 0;
+footer p{
     text-align: center;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: larger;
+    padding: 1em 0;
+    background-color: #777373;
+    color: #fff;
+    border-radius: 0 0 8px 8px;
 }
-
-.header-links ul li {
-    border-radius: 4ch;
-    border-width: 4ch;
-    border-style: solid;
-}
-
-.header-links {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.header-links li {
-    display: inline;
-}
-
-.header-links a {
-    text-decoration: none;
-    color: rgb(51, 49, 49); /* Customize the color */
-    margin-left: auto; /* Space between links */
-}
-
-#social-media {
-    padding: 20px;
-    text-align: center;
-}
-
-#social-media i {
-    margin-right: auto; /* Space between icon and text */
-}
-
-#social-media ul {
-    list-style: none;
-    padding: 0;
-}
-
-#social-media ul li {
-    display: inline;
-    margin: 0 10px;
-    border-radius: 2ch;
-    border-color: rgb(59, 57, 57);
-    border-width: 2px;
-    border-style: solid;
-    padding: 10px;
-}
-
-#social-media ul li a {
-    text-decoration: none;
-    color: #2e2c2c;
-    font-size: 18px;
-    transition: color 0.3s ease;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-
-#social-media ul li a:hover {
-    color: #150452;
-}
-
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-    font-family: 'Courier New', Courier, monospace;
-}
-
