@@ -4,128 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Saleh Alkarabubi</title>
-   <link rel="stylesheet" href="style.css"> 
-    <link rel="stylesheet" href="PhoT.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!--<h1 style="color:black;">Saleh Omer Alkarabubi</h1>-->
-    
-    
 <nav class="navbar">
-<ul>
-<li><a href="index.html">Home</a></li>
-<!--
-<li><a href="about.html">About</a></li>
-<li><a href="photos.html">Photos</a></li>
--->
-<h1>My Photos</h1>
-</ul>
-
-</nav>
-<!--
-<header>
-  
-  <ul>
-    <li><a href="index.html">Home</a><h1>My Photos</h1></li>
+    <ul>
+        <li class="home-link"><a href="index.html">Home</a></li>
+        <li class="title"><h1>My Photos</h1></li>
     </ul>
-</header>
+</nav>
 
--->
-
-<section id="gallery">
-  <img id="image1" src="sh1.jpg" alt="Image 1">
-  <img id="image2" src="nload.jpeg" alt="Image 2">
-  <img id="image3" src="red_8.jpg" alt="Image 3">
-  <img id="image4" src="46441.jpg" alt="Image 4">
-  <img id="image5" src="Corinthia.jpeg" alt="Image 5">
-  <img id="image6" src="Oun.jpeg" alt="Image 6">
-  <img id="image7" src="ges.jpeg" alt="Image 7">
-  <img id="image8" src="black.jpg" alt="Image 8">
-  <img id="image9" src="Tri.jpeg" alt="Image 9">
-  <img id="image10" src="Tripoli2.jpeg" alt="Image 10">
+<section id="gallery-container">
+    <div class="box">
+        <img src="sh1.jpg" alt="Image 1">
+    </div>
+    <div class="box">
+        <img src="nload.jpeg" alt="Image 2">
+    </div>
+    <div class="box">
+        <img src="red_8.jpg" alt="Image 3">
+    </div>
+    <div class="box">
+        <img src="46441.jpg" alt="Image 4">
+    </div>
+    <div class="box">
+        <img src="Corinthia.jpeg" alt="Image 5">
+    </div>
+    <div class="box">
+        <img src="Oun.jpeg" alt="Image 6">
+    </div>
+    <div class="box">
+        <img src="ges.jpeg" alt="Image 7">
+    </div>
+    <div class="box">
+        <img src="black.jpg" alt="Image 8">
+    </div>
+    <div class="box">
+        <img src="Tri.jpeg" alt="Image 9">
+    </div>
+    <div class="box">
+        <img src="Tripoli2.jpeg" alt="Image 10">
+    </div>
 </section>
 
 <footer>
-  <p>Saleh Omer Ali Ali Alkarabubi.</p>
+    <p>Saleh Omer Ali Ali Alkarabubi.</p>
 </footer>
 
-<script src="phot.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const images = document.querySelectorAll("#gallery-container img");
 
+        images.forEach(image => {
+            image.addEventListener("mouseover", function() {
+                this.style.transform = "scale(1.1)";
+                this.style.filter = "brightness(0.8)";
+            });
 
+            image.addEventListener("mouseout", function() {
+                this.style.transform = "scale(1)";
+                this.style.filter = "brightness(1)";
+            });
+        });
+    });
+</script>
 
-
-
-
-<!--
-<br>
-<br>
-<div class="gallery">
-    <a target="_blank" href="images/Tripoli.jpg">
-  <img src="images/Tripoli.jpg" alt="This picture is of capital of Libya" width="460" height="345" margin: 100px>
-  <img src="images/saleh.jpg" width="50" height="40" >
-     </a>
-</div> 
-<div class="descriotion" >This is my Captail</div>
-  
-<div class="list-group">
-    <a class="list-group-item" href="#"><i class="fa fa-home fa-fw" aria-hidden="true"></i>&nbsp; Home</a>
-    <a class="list-group-item" href="#"><i class="fa fa-book fa-fw" aria-hidden="true"></i>&nbsp; Library</a>
-    <a class="list-group-item" href="#"><i class="fa fa-pencil fa-fw" aria-hidden="true"></i>&nbsp; Applications</a>
-    <a class="list-group-item" href="#"><i class="fa fa-cog fa-fw" aria-hidden="true"></i>&nbsp; Settings</a>
-  </div>
-
-  <a class="btn btn-default" href="path/to/settings" aria-label="Settings">
-    <i class="fa fa-cog" aria-hidden="true"></i>
-  </a>
-  
-  <a class="btn btn-danger" href="path/to/settings" aria-label="Delete">
-    <i class="fa fa-trash-o" aria-hidden="true"></i>
-  </a>
-  
-  <a class="btn btn-primary" href="#navigation-main" aria-label="Skip to main navigation">
-    <i class="fa fa-bars" aria-hidden="true"></i>
-  </a>
-  <i class="fa fa-refresh fa-spin fa-3x fa-fw" aria-hidden="true"></i>
-  <span class="sr-only">Refreshing...</span>
-  
-  <i class="fa fa-cog fa-spin fa-3x fa-fw" aria-hidden="true"></i>
-  <span class="sr-only">Saving. Hang tight!</span>
-  <div class="input-group margin-bottom-sm">
-    <span class="input-group-addon"><i class="fa fa-envelope-o fa-fw" aria-hidden="true"></i></span>
-    <input class="form-control" type="text" placeholder="Email address">
-  </div>
-  <div class="input-group">
-    <span class="input-group-addon"><i class="fa fa-key fa-fw" aria-hidden="true"></i></span>
-    <input class="form-control" type="password" placeholder="Password">
-  </div>
-  <a href="path/to/shopping/cart" class="btn btn-primary" aria-label="View 3 items in your shopping cart">
-    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-  </a>
-  <i class="fa fa-battery-half" aria-hidden="true"></i>
-  <span class="sr-only">Battery level: 50%</span>
-
-  <span class="fa-stack fa-lg">
-    <i class="fa fa-square-o fa-stack-2x"></i>
-    <i class="fa fa-twitter fa-stack-1x"></i>
-  </span>
-  fa-twitter on fa-square-o<br>
-  <span class="fa-stack fa-lg">
-    <i class="fa fa-circle fa-stack-2x"></i>
-    <i class="fa fa-flag fa-stack-1x fa-inverse"></i>
-  </span>
-  fa-flag on fa-circle<br>
-  <span class="fa-stack fa-lg">
-    <i class="fa fa-square fa-stack-2x"></i>
-    <i class="fa fa-terminal fa-stack-1x fa-inverse"></i>
-  </span>
-  fa-terminal on fa-square<br>
-  <span class="fa-stack fa-lg">
-    <i class="fa fa-camera fa-stack-1x"></i>
-    <i class="fa fa-ban fa-stack-2x text-danger"></i>
-  </span>
-  fa-ban on fa-camera
-  -->
 </body>
 </html>
-
