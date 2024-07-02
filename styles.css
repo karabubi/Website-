@@ -102,3 +102,66 @@ footer p{
     color: #fff;
     border-radius: 0 0 8px 8px;
 }
+
+#loginFormContainer {
+    display: none;
+    background-color: #f5e8e8;
+    padding: 25px;
+    margin: 20px auto;
+    width: 400px; /* Increased the width */
+    text-align: left;
+    border: 6px solid #424141;
+    border-radius: 2ch;
+    color: #11057a;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3cqb;
+    font-weight: bold;
+    
+}
+
+#username, #password {
+    flex: 1;
+    padding: 10px; /* Padding inside input fields */
+    font-size: 16px; /* Font size of the text inside input fields */
+    border: 1px solid #ccc; /* Border style */
+    border-radius: 4px; /* Rounded corners */
+    box-sizing: border-box; /* Ensure padding and border fit within specified width */
+
+    
+}
+
+
+#username:focus, #password:focus {
+    border-color: #007BFF; /* Change the border color on focus */
+    box-shadow: 0 0 7px rgba(0, 123, 255, 0.5); /* Add a subtle shadow effect on focus */
+    outline: none; /* Remove the default outline */
+    background-color: #80ca86;
+}
+
+
+
+#messageDisplay {
+    margin-top: 10px;
+    color: red;
+}
+
+
+/* Optional: Hover effect for button */
+#loginForm button:hover {
+    background-color: yellow /* Darker green when hovering */
+}
+
+    /* Style the submit button */
+#loginForm button {
+    width: 100%; /* Adjust width as needed */
+    padding: 10px; /* Padding inside button */
+    background-color: rgb(168, 193, 238); /* Green background color */
+    color: rgb(236, 35, 8); /* Text color */
+    border: #363131; /* No border */
+    border-radius: 1ch; /* Rounded corners */
+    cursor: pointer; /* Cursor style */
+    align-items: center;
+    font-size: x-large;
+    font-weight: bold;
+}
