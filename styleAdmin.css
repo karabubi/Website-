@@ -81,6 +81,15 @@ h1 {
     border-radius: 10ch;
 }
 
+
+.box video{
+    width: 70%;
+    height: 70%;
+    object-fit: cover;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    border-radius: 10ch;
+}
+
 footer {
     background-color: #7a7e7ed7;
     color: #022002;
