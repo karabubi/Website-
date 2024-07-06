@@ -1,0 +1,145 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f5efef;
+    color: #333;
+    padding: 20px;
+}
+
+/* Header styling */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #8d6868;
+    color:white;
+    
+}
+
+header h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+header h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+/* Main content styling */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+section h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+}
+
+section ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+section ul li {
+    margin-bottom: 10px;
+}
+
+section ul li strong {
+    font-weight: bold;
+}
+
+/* CV Link styling */
+#cv-link {
+    display: block;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+}
+
+#cv-link:hover {
+    background-color: #0056b3;
+}
+
+
+/* Image container styling */
+.image-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+    background-color: #e6ebf0;
+    border-radius: 20px;
+}
+
+
+/* Image styling */
+#profile-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+padding-left: 75%;
+}
+
+
+
+/* Section colors */
+.section-studium {
+    background-color: #e6f7ff; /* Light blue */
+}
+
+.section-certificates {
+    background-color: #ffebcc; /* Light orange */
+}
+
+.section-skills {
+    background-color: #e6ffe6; /* Light green */
+}
+
+.section-languages {
+    background-color: #ffe6e6; /* Light red */
+}
+
+.section-cv {
+    background-color: #f0e6ff; /* Light purple */
+}
+
+
+
+
+/* Footer styling */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: white;
+    background-color: #8d6868;
+    height: 70px;
+    
+}
