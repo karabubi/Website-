@@ -1,76 +1,146 @@
-<!DOCTYPE html>
-<html lang="de">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lebenslauf von Saleh Omer Alkarabubi</title>
-    <link rel="stylesheet" href="stylesContactPage.css">
-</head>
-<body>
-    <header>
-        
-        <h1>Saleh Omer Alkarabubi</h1>
-        <p>Born on April 4, 1966 in Riyaina, Libya, Libyen<br>Married, four children</p>
-    </header>
-    
-    <main>
-        <section class="section-studium">
-            <h2>Studies</h2>
-            <ul>
-                <li><strong>2013 – 2017:</strong> Computer Science , Rheinische Friedrich-Wilhelms-Universität Bonn (incomplete)</li>
-                <li><strong>2007 – 2010:</strong>  Computer Information System , Middle East University for Graduate , Amman, Jordan (Master of Science)</li>
-                <li><strong>2005 – 2007:</strong> Computer Information System , The Arab Academy for Banking and Financial Sciences, Amman, Jordan (Bachelor of Science)</li>
-                <li><strong>2003 – 2005:</strong> Information Technology, Al-Quds College, Amman, Jordan (Diplom)</li>
-            </ul>
-        </section>
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-        <section class="section-certificates">
-            <h2>Training Certificates</h2>
-            <ul>
-                <li><strong>2008:</strong> CCNA, Cisco Career Certifications</li>
-                <li><strong>2008:</strong>  CCNA, Professional Consultants for Computer, Amman, Jordan</li>
-                <li><strong>2005:</strong> Software Engineering, Al-Quds College, Amman, Jordan</li>
-            </ul>
-        </section>
+/* Body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f5efef;
+    color: #333;
+    padding: 20px;
+}
 
-        <section class="section-skills">
-            <h2>Technical Skills</h2>
-            <ul>
-                <li>Java</li>
-                <li>VB</li>
-                <li>HTML, CSS</li>
-                <li>Semantic Web Technology, XML</li>
-                <li>PC Software Installation</li>
-            </ul>
-        </section>
+/* Header styling */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #8d6868;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
 
-        <section class="section-languages">
-            <h2>Language skills</h2>
-            <ul>
-                <li>Arabic (native speaker)</li>
-                <li>Englisch</li>
-                <li>German (Language level B2)</li>
-            </ul>
-        </section>
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
 
-        <section class="section-cv">
-            <h2>My CV</h2>
-            <a href="saleh.pdf" target="_blank" id="cv-link">Download My CV</a>
-        </section>
-        <aside>
-            <div class="image-container">
-                
-                <img src="saleh.jpg" alt="Saleh Omer Alkarabubi" id="profile-image">
+header p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
 
-            </div>
-        </aside>
-    </main>
-    
-    <footer>
-        
-        <p>Contact: karabubi66@yahoo.com</p>
-    </footer>
+/* Main content styling */
+main {
+    display: flex;
+    flex-direction: row;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
 
-    <script src="scriptContact.js"></script>
-</body>
-</html>
+.content {
+    flex: 3;
+    margin-right: 20px;
+}
+
+/* Profile image container */
+.profile-image-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #e6ebf0;
+    border-radius: 20px;
+}
+
+.profile-image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Section styling */
+section {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+section h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+}
+
+section ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+section ul li {
+    margin-bottom: 10px;
+}
+
+section ul li strong {
+    font-weight: bold;
+}
+
+/* Section colors */
+.section-studium {
+    background-color: #c4dde9; /* Light blue */
+}
+
+.section-certificates {
+    background-color: #f7ddb7; /* Light orange */
+}
+
+.section-skills {
+    background-color: #c9f3c9; /* Light green */
+}
+
+.section-languages {
+    background-color: #fdd4d4; /* Light red */
+}
+
+.section-cv {
+    background-color: #e0cefc; /* Light purple */
+}
+
+/* CV Link styling */
+.cv-link {
+    display: block;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cv-link:hover {
+    background-color: #0056b3;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: white;
+    background-color: #8d6868;
+    padding: 20px;
+    border-radius: 10px;
+}
