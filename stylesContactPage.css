@@ -7,7 +7,7 @@
 
 /* Body styling */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     line-height: 1.6;
     background-color: #f5efef;
     color: #333;
@@ -19,42 +19,67 @@ header {
     text-align: center;
     margin-bottom: 20px;
     background-color: #8d6868;
-    color:white;
-    
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
 }
 
 header h1 {
-    font-size: 2em;
+    font-size: 2.5em;
     margin-bottom: 10px;
-}
-
-header h2 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
+    font-weight: bold;
 }
 
 header p {
-    font-size: 1em;
+    font-size: 1.2em;
     margin-bottom: 20px;
 }
 
 /* Main content styling */
 main {
-    max-width: 800px;
+    display: flex;
+    flex-direction: row;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 }
 
+.content {
+    flex: 3;
+    margin-right: 20px;
+}
+
+/* Profile image container */
+.profile-image-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #e6ebf0;
+    border-radius: 20px;
+}
+
+.profile-image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Section styling */
 section {
     margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 10px;
 }
 
 section h2 {
-    font-size: 1.2em;
+    font-size: 1.5em;
     margin-bottom: 10px;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 2px solid #ddd;
     padding-bottom: 5px;
 }
 
@@ -71,8 +96,29 @@ section ul li strong {
     font-weight: bold;
 }
 
+/* Section colors */
+.section-studium {
+    background-color: #c4dde9; /* Light blue */
+}
+
+.section-certificates {
+    background-color: #f7ddb7; /* Light orange */
+}
+
+.section-skills {
+    background-color: #c9f3c9; /* Light green */
+}
+
+.section-languages {
+    background-color: #fdd4d4; /* Light red */
+}
+
+.section-cv {
+    background-color: #e0cefc; /* Light purple */
+}
+
 /* CV Link styling */
-#cv-link {
+.cv-link {
     display: block;
     margin-top: 10px;
     padding: 10px;
@@ -81,57 +127,12 @@ section ul li strong {
     text-decoration: none;
     text-align: center;
     border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
-#cv-link:hover {
+.cv-link:hover {
     background-color: #0056b3;
 }
-
-
-/* Image container styling */
-.image-container {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    text-align: center;
-    background-color: #e6ebf0;
-    border-radius: 20px;
-}
-
-
-/* Image styling */
-#profile-image {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-padding-left: 75%;
-}
-
-
-
-/* Section colors */
-.section-studium {
-    background-color: #e6f7ff; /* Light blue */
-}
-
-.section-certificates {
-    background-color: #ffebcc; /* Light orange */
-}
-
-.section-skills {
-    background-color: #e6ffe6; /* Light green */
-}
-
-.section-languages {
-    background-color: #ffe6e6; /* Light red */
-}
-
-.section-cv {
-    background-color: #f0e6ff; /* Light purple */
-}
-
-
-
 
 /* Footer styling */
 footer {
@@ -140,6 +141,6 @@ footer {
     font-size: 0.9em;
     color: white;
     background-color: #8d6868;
-    height: 70px;
-    
+    padding: 20px;
+    border-radius: 10px;
 }
