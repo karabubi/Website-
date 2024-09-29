@@ -24,20 +24,40 @@ body {
 
 .box1 {
     text-align: center;
-    padding: 20px;
-    background-image: url('LIBYA\ DM.jpg');
-    background-repeat: no-repeat;
+    height: 300px;
+    padding: 60px;
+    background-image: url('Web2.jpg');
+    background-repeat: repeat-x;
 }
-.box1-image {
-    width: 100%;
-    max-width: 100px;
-    border-radius: 50%;
-    margin-bottom: 20px;
+/*
+.box1 {
+    text-align: center;
+    padding: 60px;
+    background-image: url('LIBYA\ DM.jpg');
+    background-repeat: repeat-x;
+}
+*/
 
+.box1 h1 {
+    color: white; /* Changing the h1 text color to white */
+    font-size: 2.5em; /* Optional: adjust the font size */
+}
+
+.box1-image {
+    width: 170%;
+    
+    height: fit-content;
+    max-width: 90px;
+    border-radius: 80%;
+    margin-bottom: 60px;
+position: absolute;
+transform-style: inherit;
+
+right: 110px;
     animation-name: slideUp;
     animation-duration: 2s;
-}
 
+}
 
 
 @keyframes slideUp {
