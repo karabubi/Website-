@@ -15,7 +15,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    text-shadow: 2px 2px 5px rgb(212, 164, 100);
+    color: white;
     font-weight: lighter;
 }
 
@@ -92,7 +92,7 @@ h1 {
 
 footer {
     background-color: #7a7e7ed7;
-    color: #022002;
+    color: white;
     text-align: center;
     padding: 10px 0;
     
