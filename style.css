@@ -1,114 +1,176 @@
-body {
-  margin: 0;
-  background-color: #f0f0f5; /* Softer background for a calming effect */
-  font-family: 'Arial', sans-serif;
-  color: #333;
-  box-sizing: border-box;
-  line-height: 1.6;
-}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Saleh Alkarabubi</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul>
+         <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+        <li class="title"><h1>My Photos</h1></li>
+      </ul>
+    </nav>
 
-/* Navigation Bar */
-.navbar ul {
-  list-style-type: none;
-  background-color: #505e6d; /* Muted color for better contrast */
-  padding: 10px 20px;
-  margin: 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
+    <section id="gallery-container">
+      <div class="box">
+        <img src="sh1.jpg" alt="Image 1" />
 
+        <div class="image-caption">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
+          accusantium quibusdam consequuntur distinctio repellendus error hic
+          est natus harum tempore similique molestiae placeat, consectetur nemo
+          cum quia beatae. Dolorum, vitae.
+        </div>
+      </div>
+      <div class="box">
+        <img src="nload.jpeg" alt="Image 2" />
 
-/* Responsive design adjustments */
-@media only screen and (max-width: 600px) {
-  nav ul {
-    flex-direction: column;
-  }
+        <div class="image-caption">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
+          accusantium quibusdam consequuntur distinctio repellendus error hic
+          est natus harum tempore similique molestiae placeat, consectetur nemo
+          cum quia beatae. Dolorum, vitae.
+        </div>
+      </div>
+      <div class="box">
+        <img src="red_8.jpg" alt="Image 3" />
 
-  nav ul li {
-    width: 100%;
-    text-align: center;
-  }
-}
+        <div class="image-caption">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
+          accusantium quibusdam consequuntur distinctio repellendus error hic
+          est natus harum tempore similique molestiae placeat, consectetur nemo
+          cum quia beatae. Dolorum, vitae.
+        </div>
+      </div>
+      <div class="box">
+        <img src="46441.jpg" alt="Image 4" />
 
+        <div class="image-caption">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
+          accusantium quibusdam consequuntur distinctio repellendus error hic
+          est natus harum tempore similique molestiae placeat, consectetur nemo
+          cum quia beatae. Dolorum, vitae.
+        </div>
+      </div>
+      <div class="box">
+        <img src="Corinthia.jpeg" alt="Image 5" />
 
-.navbar .home-link {
-  flex: 1;
-  text-align: left;
-}
+        <div class="image-caption">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
+          accusantium quibusdam consequuntur distinctio repellendus error hic
+          est natus harum tempore similique molestiae placeat, consectetur nemo
+          cum quia beatae. Dolorum, vitae.
+        </div>
+      </div>
+      <div class="box">
+        <img src="Oun.jpeg" alt="Image 6" />
 
-.navbar .title {
-  flex: 2;
-  text-align: center;
-color: white;
+        <div class="image-caption">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
+          accusantium quibusdam consequuntur distinctio repellendus error hic
+          est natus harum tempore similique molestiae placeat, consectetur nemo
+          cum quia beatae. Dolorum, vitae.
+        </div>
+      </div>
+      <div class="box">
+        <img src="ges.jpeg" alt="Image 7" />
 
-}
+        <div class="image-caption">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
+          accusantium quibusdam consequuntur distinctio repellendus error hic
+          est natus harum tempore similique molestiae placeat, consectetur nemo
+          cum quia beatae. Dolorum, vitae.
+        </div>
+      </div>
+      <div class="box">
+        <img src="black.jpg" alt="Image 8" />
 
-.navbar li {
-  display: inline-block;
-}
+        <div class="image-caption">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
+          accusantium quibusdam consequuntur distinctio repellendus error hic
+          est natus harum tempore similique molestiae placeat, consectetur nemo
+          cum quia beatae. Dolorum, vitae.
+        </div>
+      </div>
+      <div class="box">
+        <img src="Tri.jpeg" alt="Image 9" />
 
+        <div class="image-caption">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
+          accusantium quibusdam consequuntur distinctio repellendus error hic
+          est natus harum tempore similique molestiae placeat, consectetur nemo
+          cum quia beatae. Dolorum, vitae.
+        </div>
+      </div>
+      <div class="box">
+        <img src="Tripoli2.jpeg" alt="Image 10" />
 
+        <div class="image-caption">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
+          accusantium quibusdam consequuntur distinctio repellendus error hic
+          est natus harum tempore similique molestiae placeat, consectetur nemo
+          cum quia beatae. Dolorum, vitae.
+        </div>
+      </div>
+      <div class="box">
+        <img src="Riyaina.jpg" alt="Image 11" />
 
-.navbar a {
-  color: #ffffff;
-  text-decoration: none;
-  padding: 10px;
-  font-weight: bold;
-}
+        <div class="image-caption">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
+          accusantium quibusdam consequuntur distinctio repellendus error hic
+          est natus harum tempore similique molestiae placeat, consectetur nemo
+          cum quia beatae. Dolorum, vitae.
+        </div>
+      </div>
 
-.navbar a:hover {
-  background-color: #424c56;
-  transition: background-color 0.3s ease;
-}
+      <div class="box">
+        <img src="NAH.jpg" alt="Image 12" />
 
-/* Heading Styles */
-h1 {
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  font-size: 3rem;
-  text-shadow: 2px 2px 5px #00000050
-  color: white;
+        <div class="image-caption">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
+          accusantium quibusdam consequuntur distinctio repellendus error hic
+          est natus harum tempore similique molestiae placeat, consectetur nemo
+          cum quia beatae. Dolorum, vitae.
+        </div>
+      </div>
 
+      <div class="box">
+        <img src="jab.jpeg" alt="Image 13" />
 
-}
+        <div class="image-caption">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
+          accusantium quibusdam consequuntur distinctio repellendus error hic
+          est natus harum tempore similique molestiae placeat, consectetur nemo
+          cum quia beatae. Dolorum, vitae.
+        </div>
+      </div>
+    </section>
 
+    <footer>
+      <p>Saleh Omer Ali Ali Alkarabubi.</p>
+    </footer>
 
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const images = document.querySelectorAll("#gallery-container img");
 
-#gallery-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  padding: 20px;
-}
+        images.forEach((image) => {
+          image.addEventListener("mouseover", function () {
+            this.style.transform = "scale(1.1)";
+            this.style.filter = "brightness(0.8)";
+          });
 
-.box {
-  flex: 1 1 200px;
-  max-width: 200px;
-  position: relative;
-  overflow: hidden;
-}
-
-.box img {
-  width: 100%;
-  height: 150px;
-  object-fit: cover;
-  transition: transform 0.3s ease, filter 0.3s ease;
-}
-
-footer {
-  background-color: #7a7e7ed7;
-  
-  text-align: center;
-  padding: 10px 0;
-color: red;
-
-  text-shadow: 0 0 3px #66ff00, 0 0 5px #043824;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  position: fixed;
-  width: 100%;
-  bottom: 0;
-}
+          image.addEventListener("mouseout", function () {
+            this.style.transform = "scale(1)";
+            this.style.filter = "brightness(1)";
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
