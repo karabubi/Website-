@@ -20,14 +20,53 @@ header {
     background: #696e69;
     color: #fff;
     padding: 2rem;
-    text-align: center;
-    font-size: 1.5rem;
-    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-header p {
-    font-size: 1rem;
+/* Navbar styles */
+.navbar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+/* Left side link */
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    display: inline;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    margin-right: 1rem;
+}
+
+.navbar ul li a i {
+    margin-right: 0.5rem;
+}
+
+/* Centered title and description */
+.center-content {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.center-content h1 {
+    font-size: 1.8rem;
+}
+
+.center-content p {
     margin-top: 0.5rem;
+    font-size: 1rem;
 }
 
 /* Main content */
